@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<table class="dail">
+
+		<tr>
+			<td class = "display">
+			<input type="text" name="result"id="result" value="" placeholder="Result" readonly /></td>
+        	<td><input type="button" value="C" onclick="cls()" class="clear"/></td>
+        	
+		</tr>
+
+		<tr class="dailRow">
+			<td class="num" type = "button" onclick="liveScreen(7)">7</td>
+			<td class="num" type = "button" onclick="liveScreen(8)">8</td>
+			<td class="num" type = "button" onclick="liveScreen(9)">9</td>
+			<td class="num" type = "button" onclick="liveScreen('/')">/</td>
+		</tr>
+
+		<tr class="dailRow">
+			<td class="num" type = "button" onclick="liveScreen(4)">4</td>
+			<td class="num" type = "button" onclick="liveScreen(5)">5</td>
+			<td class="num" type = "button" onclick="liveScreen(6)">6</td>
+			<td class="num" type = "button" onclick="liveScreen('*')">*</td>
+		</tr>
+
+		<tr class="dailRow">
+			<td class="num" type = "button" onclick="liveScreen(1)">1</td>
+			<td class="num" type = "button" onclick="liveScreen(2)">2</td>
+			<td class="num" type = "button" onclick="liveScreen(3)">3</td>
+			<td class="num" type = "button" onclick="liveScreen('-')">-</td>
+		</tr>
+
+		<tr class="dailRow">
+			<td class="num" type = "button" onclick="liveScreen('.')">.</td>
+			<td class="num" type = "button" onclick="liveScreen(0)">0</td>
+			<td class="num" type = "button" onclick="result.value = eval(result.value)">=</td>
+			<td class="num" type = "button" onclick="liveScreen('+')">+</td>
+		</tr>
+
+	</table>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
